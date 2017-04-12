@@ -1,4 +1,4 @@
-var hangmanAnswers = {
+var hangmanWords = [
 	"WRANGELLSTELIAS",
 	"GATESOFTHEARCTIC",
 	"DENALI",
@@ -19,17 +19,34 @@ var hangmanAnswers = {
 	"ISLEROYALE",
 	"THEGREATSMOKYMOUNTAINS",
 	"NORTHCASCADES"
-};
+];
+
+var wins = 0;
+var totalGuesses = 12;
+
+function startGame() {
+	("#startgame").click(function(){
+		var randomWord = hangmanWords[Math.floor(Math.random()*hangmanWords.length)];
+		var randomWordLength = randomWord.length;
+	});
+}
+
+
+// document.onkeyup = function(event) {
+// 	var randomWord = hangmanWords[Math.floor(Math.random()*hangmanWords.length)];
+// 	document.getElementById("current-word").innerHTML = randomWord;
+// }
 
 var hangman = {
-
-	document.onkeyup = function(event) {
-		var userGuess = String.fromCharCode(event.keyCode).toUpperCase();
-	}
-
-
-
-
+	//the startGame property here sets the 
+	startGame: function() {
+				("#startgame").onclick(function(){
+					var randomWord = hangmanWords[Math.floor(Math.random()*hangmanWords.length)];
+					//var randomWordLength = randomWord.length;
+					var randomWordHidden = randomWord.replace(/[^a-z0-9]/gi, "_ ");
+					document.getElementById("current-word").innerHTML = randomWordHidden;
+				});
+		}
 
 
 
