@@ -7,28 +7,9 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 	<!-- <link rel="stylesheet" type="text/css" href="assets/css/style.css"> -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<script type="text/javascript" src="assets/javascript/game.js"></script>
+	
 </head>
 
-<!-- 
-Pseudocode for Hangman:
-
-1. Have computer pick a word from the set of words around the chosen theme
-	-Display it as underscored blanks on the screen
-	-theme will be national parks, change background to image of the national park after user wins/loses
-2. User guesses a letter (have text on screen that says "Press any key to get started")
-	-convert guessed letters to uppercase
-	-if letter is part of word, display it on the screen as part of the underscored blanks that represent the word
-	-don't change number of guesses remaining if correct letter is guessed
-	-if not part of word, display letter on screen as part of a section that has guessed letters
-	-reduce "number of guesses remaining" by one if incorrect letter is guessed
-	-if user picks the same incorrect letter again, don't change "number of guesses remaining"
-3. If user finishes the word before user runs out of guesses, increment "Wins" by 1
-4. When user wins/loses, change screen/pic to match the word in the previous round and start a new round by changing to a new word
-	-reset "number of guesses remaining"
-	-clear "guessed letters" section
-
- -->
 
 <body>
 
@@ -67,7 +48,7 @@ Pseudocode for Hangman:
 	</div>
 </div>
 
-<script type="text/javascript">
+
 	
 
 
@@ -75,9 +56,9 @@ Pseudocode for Hangman:
 
 
 
+<script type="text/javascript" src="assets/javascript/game.js"></script>
 
 
-</script>
 
 </body>
 </html>
