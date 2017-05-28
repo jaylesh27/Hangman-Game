@@ -5,45 +5,44 @@
 	<meta charset="UTF-8">
 
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-	<!-- <link rel="stylesheet" type="text/css" href="assets/css/style.css"> -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 
 <body>
 
-<div class="page-header">
-  <h1 class="text-center">National Parks Hangman</h1>
-  <h3 class="text-center">A simple way to enjoy the National Parks after they are sold to the highest bidder!</h3>
+<div class="jumbotron">
+	<h1 class = "text-center">National Parks hangman</h1>
 </div>
 
 <div class="container">
 	<div class ="row">
-		<div class="col-lg-6">
-			<p id="startgame" class="btn btn-primary btn-lg">Click to start game</p>
+		<div class="col-lg-6 text-center" id = "gameBoard">
+			<p class="btn btn-primary btn-lg" id="startgame">Click to start game or reset game</p>
 			<br>
-			<h4 class="text-center" id="wins">Wins:</h4>
 			<br>
-			<h4 class="text-center">Current word:</h4>
+			<h4 id="wins">Wins:</h4>
 			<br>
-			<p class="text-center" id="current-word"></p>
+			<h4>Current word:</h4>
 			<br>
-			<h4 class="text-center">Number of guesses remaining:</h4>
+			<p id="current-word"></p>
+			<br>
+			<h4>Number of guesses remaining:</h4>
 			<br>
 			<p id="guessesleft"></p>
 			<br>
-			<h4 class="text-center">Letters already guessed:</h4>
+			<h4>Letters already guessed:</h4>
 			<br>
 			<p id="guessedletters"></p>
 		</div>
-		<div class="col-lg-6">
-			<h1 class="text-center" id="parkname">Insert park name here</h1>
+		<div class="col-lg-6 text-center" id = "parksDisplay">
+			<h1 id="parkname">Insert park name here</h1>
 			<br>
 			<br>
 			<br>
 			<br>
-			<p class="text-center" id="parkpicture">Insert park picture here</p>
+			<p id="parkpicture">Insert park picture here</p>
 		</div>
 	</div>
 </div>
